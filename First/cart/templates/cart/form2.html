@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content_cmp1 %}
+cart form
+<form method="POST">
+{% csrf_token %}
+Buy this Product?{{form.is_buyed}}
+<input type="submit" value="Submit">
+</form>
+{% endblock %}

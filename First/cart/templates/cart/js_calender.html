@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Calender</title>
+	<style type="text/css">
+		table{
+			border:4;
+			font-size: 30px;
+		}
+		td#m{
+			background-color: #C87749;
+			color: white;
+		}
+		body{
+			background-color:black;
+
+		}
+		tr,td{
+			padding: 25px;
+			background-color:#F1B53E;
+		}
+		#white{
+			color:white;
+		}
+	</style>
+ 	
+</head>
+<body onload="myFunction()">
+<center>
+<div id="white">
+<div id="namelabel" style="font-size: 20px">Your Name Here</div>
+	<br>
+<form>
+Type The Year:<input type="text" id="year">
+Select Month:
+<select id="month">
+  <option value="0">JANUARY</option>
+  <option value="1">FEBRUARY</option>
+  <option value="2">MARCH</option>
+  <option value="3">APRIL</option>
+  <option value="4">MAY</option>
+  <option value="5">JUNE</option>
+  <option value="6">JULY</option>
+  <option value="7">AUGUST</option>
+  <option value="8">SEPTEMBER</option>
+  <option value="9">OCTOBER</option>
+  <option value="10">NOVEMBER</option>
+  <option value="11">DECEMBER</option>
+</select>
+<input type="button" onclick="doit()" value="Display Calender">
+<input type="button" onclick="showtoday()" value="Today">
+</form>
+</div>
+</center>
+<br><br>
+<center>
+<table >
+<tbody>
+<tr>
+<td style="width: 113.6px;" id="m">&nbsp; &nbsp; &nbsp; Monday</td>
+<td style="width: 113.6px;" id="m">&nbsp; &nbsp; &nbsp; Tuesday</td>
+<td style="width: 114.4px;" id="m">&nbsp; &nbsp; &nbsp; Wednesday</td>
+<td style="width: 115.2px;" id="m">&nbsp; &nbsp; &nbsp; Thursday</td>
+<td style="width: 116px;" id="m">&nbsp; &nbsp; &nbsp; Friday</td>
+<td style="width: 116px;" id="m">&nbsp; &nbsp; &nbsp;Saturday</td>
+<td style="width: 116.8px;" id="m">&nbsp; &nbsp; &nbsp; Sunday</td>
+</tr>
+<tr>
+<td style="width: 113.6px;" id="1">&nbsp;</td>
+<td style="width: 113.6px;" id="2">&nbsp;</td>
+<td style="width: 114.4px;" id="3">&nbsp;</td>
+<td style="width: 115.2px;" id="4">&nbsp;</td>
+<td style="width: 116px;" id="5">&nbsp;</td>
+<td style="width: 116px;" id="6">&nbsp;</td>
+<td style="width: 116.8px; background-color:tomato; color:white" id="7">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 113.6px;" id="8">&nbsp;</td>
+<td style="width: 113.6px;" id="9">&nbsp;</td>
+<td style="width: 114.4px;" id="10">&nbsp;</td>
+<td style="width: 115.2px;" id="11">&nbsp;</td>
+<td style="width: 116px;" id="12">&nbsp;</td>
+<td style="width: 116px;" id="13">&nbsp;</td>
+<td style="width: 116.8px; background-color:tomato; color:white" id="14">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 113.6px;" id="15">&nbsp;</td>
+<td style="width: 113.6px;" id="16">&nbsp;</td>
+<td style="width: 114.4px;" id="17">&nbsp;</td>
+<td style="width: 115.2px;" id="18">&nbsp;</td>
+<td style="width: 116px;" id="19">&nbsp;</td>
+<td style="width: 116px;" id="20">&nbsp;</td>
+<td style="width: 116.8px; background-color:tomato; color:white" id="21">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 113.6px;" id="22">&nbsp;</td>
+<td style="width: 113.6px;" id="23">&nbsp;</td>
+<td style="width: 114.4px;" id="24">&nbsp;</td>
+<td style="width: 115.2px;" id="25">&nbsp;</td>
+<td style="width: 116px;" id="26">&nbsp;</td>
+<td style="width: 116px;" id="27">&nbsp;</td>
+<td style="width: 116.8px; background-color:tomato; color:white" id="28">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 113.6px;" id="29">&nbsp;</td>
+<td style="width: 113.6px;" id="30">&nbsp;</td>
+<td style="width: 114.4px;" id="31">&nbsp;</td>
+<td style="width: 115.2px;" id="32">&nbsp;</td>
+<td style="width: 116px;" id="33">&nbsp;</td>
+<td style="width: 116px;" id="34">&nbsp;</td>
+<td style="width: 116.8px; background-color:tomato; color:white" id="35">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 113.6px;" id="36">&nbsp;</td>
+<td style="width: 113.6px;" id="37">&nbsp;</td>
+<td style="width: 114.4px;" id="38">&nbsp;</td>
+<td style="width: 115.2px;" id="39">&nbsp;</td>
+<td style="width: 116px;" id="40">&nbsp;</td>
+<td style="width: 116px;" id="41">&nbsp;</td>
+<td style="width: 116.8px; background-color:tomato; color:white" id="42">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</center>
+<br>
+<script type="text/javascript" src="{% static 'js/js_calender.js' %}"></script>
+</body>
+</body>
+</body>
+</html>

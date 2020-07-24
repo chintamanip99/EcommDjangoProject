@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+<head>
+	
+<link rel="stylesheet" href="{% static '/admin/autocomplete.css' %}" />
+
+</head>
+<body>
+
+<h1>hiiii there223</h1>
+<table border="1">
+<tr>
+	<th>Id</th>
+	<th>Is Buyed?</th>
+	<th>Profile</th>
+	<th>Product</th>
+	<th>Product Image</th>
+</tr>
+{% for i in object_list %}
+<tr>
+<td>{{i.id}}</td>
+<td>{% if i.is_buyed %}Yes{% else %}No{% endif %}</td>
+<td>{{i.profile.user.username}}</td>
+<td>{{i.product.title}}</td>
+<td>{% if i.product.image %}<img src="{{i.product.image.url}}" height="500" width="700">{% endif %}</td>
+{% if not i.is_buyed %}<td><a href="../../buy/update/{{i.id}}">Buy</a></td>{% endif %}
+{% if not i.is_buyed %}<td><a href="../../buy/delete/{{i.id}}">Remove From Cart</a></td>{% endif %}
+{% if i.is_buyed %}<td><a href="../../buy/delete2/{{i.id}}">Remove From Cart</a></td>{% endif %}
+<!-- <td><a href="../update/{{i.id}}">Update</a></td> -->
+</tr>
+
+{% endfor %}
+</table>
+{{queryset}}
+<h1>Ended</h1>
+</body>
+</html>

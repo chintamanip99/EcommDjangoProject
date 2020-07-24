@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+<h1>THIS IS PRODUCTS HOME PAGE</h1>
+
+
+{% block content_cmp1 %}
+{{request.user.is_authenticated}}
+
+{% for product in products %}
+
+Title:{{product.title}}
+Price:{{product.price}}
+Summary:{{product.summary}}<br>
+
+{% endfor %}
+Title:{{obj.title}}
+Price:{{obj.price}}
+Summary:{{obj.summary}}
+
+<h1>home page</h1>
+{% endblock %}

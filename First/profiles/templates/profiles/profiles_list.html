@@ -1,0 +1,11 @@
+<h1>hiiii there</h1>
+{% for i in object_list %}
+<h1>{{i.id}}---------------></h1>
+<h1>Username:{{i.user.username}}</h1><br>
+<h1>Age:{{i.age}}</h1><br>
+<h1>Products Buyed:{{i.products_buyed}}</h1><br>
+<h1>Is Regular?:{{i.is_regular}}</h1><br>
+
+{% endfor %}
+{{queryset}}
+<h1>Ended</h1>

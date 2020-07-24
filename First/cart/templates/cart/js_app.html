@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chintamani Patil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  
+</head>
+<body>
+  <center><h1>Chintamani Patil | 2017BIT032 | CN Prac 9</h1></center>
+<h1>IP information:</h1>
+<div class="container">
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" >ipaddress:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="ipaddress" placeholder="" name="">
+      </div>
+    </div>
+     <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button  class="btn btn-default" type ="button" id="reset1" >Reset1</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">subnetmask:</label>
+      <div class="col-sm-10">          
+        <input  class="form-control" id="subnetmask" placeholder="" name="">
+      </div>
+    </div>
+     <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button  class="btn btn-default" type="button" id="defaultmask" >Default mask</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">networkid:</label>
+      <div class="col-sm-10">          
+        <input  class="form-control" id="networkid" placeholder="" name="">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button  class="btn btn-default" type = "button" id="computenow" >Compute Now</button>
+      </div>
+    </div>
+    </div>
+    
+  </form>
+  <h1>Binary IP information:</h1>
+  <!--====-->
+ <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" >ipaddress:</label>
+      <label class="control-label col-sm-2"  id="ipaddresslabel">ipaddress:</label>
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >subnetmask:</label>
+      <label class="control-label col-sm-2" id="subnetmasklabel">subnetmask:</label>
+    </div>
+    <br>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >networkid:</label>
+      <label class="control-label col-sm-2" id="networkidlabel">networkid:</label>
+    </div>
+    <br>
+    </div>
+    
+  </form>
+  <!=========================================================================================-->
+</div>
+<h1>Network information:</h1>
+ <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" >ipaddress class:</label>
+      <label class="control-label col-sm-2" id="ipaddressclasslabel">ipaddress class:</label>
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Address type:</label>
+      <label class="control-label col-sm-2" id="addresstypelabel">Address type:</label>
+    </div>
+    <br>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Good ip for host:</label>
+      <label class="control-label col-sm-2" for="pwd" id="goodipforhostlabel">Good ip for host:</label>
+    </div>
+    <br>
+    </div>
+    
+  </form>
+  <!=========================================================================================-->
+</div>
+
+
+<h1>Subnetting information:</h1>
+ <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">No. of subnetworks:</label>
+      <label class="control-label col-sm-2" for="email" id="noofsubnetworks">No. of subnetworks:</label>
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">No. of Hosts:</label>
+      <label class="control-label col-sm-2" for="pwd" id="noofhosts">No. of Hosts:</label>
+    </div>
+    <br>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Range:</label>
+      <label class="control-label col-sm-2" for="pwd" id="rangelabel">Range:</label>
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Network ID:</label>
+      <label class="control-label col-sm-2" for="pwd" id="networkidlabel123">Network ID:</label>
+    </div>
+    <br>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Broadcast ID:</label>
+      <label class="control-label col-sm-2" for="pwd" id="broadcastidlabel">Broadcast ID:</label>
+    </div>
+    <br>
+    </div>
+    
+  </form>
+  <!=========================================================================================-->
+</div>
+
+<script type="text/javascript" src="{% static 'js/ipinfo.js' %}">
+   
+  </script>
+</body>
+</html>
